@@ -7,17 +7,39 @@ export const maxDuration = 30;
 
 const LEAGUES = [
   "soccer_epl", "soccer_spain_la_liga", "soccer_germany_bundesliga",
-  "soccer_italy_serie_a", "soccer_france_ligue_one", "soccer_uefa_champs_league",
+  "soccer_italy_serie_a", "soccer_france_ligue_one",
+  "soccer_uefa_champs_league", "soccer_uefa_europa_league", "soccer_uefa_europa_conference_league",
   "soccer_sweden_allsvenskan", "soccer_sweden_superettan",
-  "icehockey_nhl", "icehockey_sweden_hockey_league",
+  "soccer_denmark_superliga", "soccer_norway_eliteserien", "soccer_finland_veikkausliiga",
+  "soccer_netherlands_eredivisie", "soccer_belgium_first_div", "soccer_portugal_primeira_liga",
+  "soccer_turkey_super_league", "soccer_greece_super_league", "soccer_switzerland_superleague",
+  "soccer_austria_bundesliga", "soccer_poland_ekstraklasa", "soccer_czech_czech_football_league",
+  "soccer_scotland_premiership", "soccer_efl_champ",
+  "soccer_usa_mls", "soccer_brazil_campeonato",
+  "soccer_fifa_world_cup", "soccer_fifa_world_cup_qualifier",
+  "soccer_uefa_european_championship", "soccer_uefa_nations_league",
+  "soccer_fifa_international_friendlies",
 ];
 
 const LEAGUE_NAMES = {
   soccer_epl: "Premier League", soccer_spain_la_liga: "La Liga",
   soccer_germany_bundesliga: "Bundesliga", soccer_italy_serie_a: "Serie A",
-  soccer_france_ligue_one: "Ligue 1", soccer_uefa_champs_league: "Champions League",
+  soccer_france_ligue_one: "Ligue 1",
+  soccer_uefa_champs_league: "Champions League", soccer_uefa_europa_league: "Europa League",
+  soccer_uefa_europa_conference_league: "Conference League",
   soccer_sweden_allsvenskan: "Allsvenskan", soccer_sweden_superettan: "Superettan",
-  icehockey_nhl: "NHL", icehockey_sweden_hockey_league: "SHL",
+  soccer_denmark_superliga: "Superligaen", soccer_norway_eliteserien: "Eliteserien",
+  soccer_finland_veikkausliiga: "Veikkausliiga",
+  soccer_netherlands_eredivisie: "Eredivisie", soccer_belgium_first_div: "Jupiler Pro",
+  soccer_portugal_primeira_liga: "Liga Portugal", soccer_turkey_super_league: "Super Lig",
+  soccer_greece_super_league: "Super League GRE", soccer_switzerland_superleague: "Super League SUI",
+  soccer_austria_bundesliga: "Bundesliga AUT", soccer_poland_ekstraklasa: "Ekstraklasa",
+  soccer_czech_czech_football_league: "Fortuna Liga", soccer_scotland_premiership: "Premiership SCO",
+  soccer_efl_champ: "Championship",
+  soccer_usa_mls: "MLS", soccer_brazil_campeonato: "Brasileirao",
+  soccer_fifa_world_cup: "VM", soccer_fifa_world_cup_qualifier: "VM-kval",
+  soccer_uefa_european_championship: "EM", soccer_uefa_nations_league: "Nations League",
+  soccer_fifa_international_friendlies: "Landskamper",
 };
 
 function removeVig(home, draw, away) {
