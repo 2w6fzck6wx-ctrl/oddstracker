@@ -168,7 +168,7 @@ export default function App(){
     }
   },[apiKey]);
 
-  useEffect(function(){load(league.id);},[league.id,savedKey]);
+  useEffect(function(){load(league.id);},[league.id,apiKey]);
   useEffect(function(){
     if(poll.current)clearInterval(poll.current);
     if(live)poll.current=setInterval(function(){load(league.id,true);},cfg.poll*1000);
