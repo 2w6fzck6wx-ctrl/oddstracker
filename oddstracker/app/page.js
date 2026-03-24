@@ -168,10 +168,10 @@ export default function App(){
     }
   },[apiKey]);
 
-  useEffect(function(){load(league.id);},[league.id,apiKey]);
+  useEffect(function(){load(league.id);},[league.id,savedKey]);
   useEffect(function(){
     if(poll.current)clearInterval(poll.current);
-    if(live)poll.current=setInterval(function(){LEAGUES.forEach(function(l){load(l.id,true);});},cfg.poll*1000);
+    if(live)poll.current=setInterval(function(){load(league.id,true);},cfg.poll*1000);
     return function(){if(poll.current)clearInterval(poll.current);};
   },[live,cfg.poll,load]);
 
