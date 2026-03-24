@@ -423,7 +423,7 @@ export default function App(){
         </div>
         <div style={{display:"flex",gap:8,marginBottom:6}}>
           <input value={keyInput} onChange={function(e){setKeyInput(e.target.value);}} placeholder={apiKey?"Aktiv nyckel sparad":"Klistra in API-nyckel..."} style={inp}/>
-          <button onClick={function(){var k=keyInput.trim();if(k){setApiKey(k);try{localStorage.setItem("odds_key",k);}catch(e){}}}} className="r" style={{background:C.gd,border:"1px solid rgba(16,185,129,.3)",color:C.gn,padding:"8px 16px",borderRadius:6,fontSize:12,fontWeight:700,whiteSpace:"nowrap"}}>{"Spara"}</button>
+          <button onClick={function(){var k=keyInput.trim();if(k){setApiKey(k);try{localStorage.setItem("odds_key",k);}catch(e){}setKeyInput("");window.location.reload();}}} className="r" style={{background:C.gd,border:"1px solid rgba(16,185,129,.3)",color:C.gn,padding:"8px 16px",borderRadius:6,fontSize:12,fontWeight:700,whiteSpace:"nowrap"}}>{"Spara"}</button>
         </div>
         {apiKey&&<div style={{fontSize:11,color:C.gn,marginBottom:16}}>{"Nyckel aktiv"}</div>}
 
